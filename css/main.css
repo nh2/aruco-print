@@ -121,11 +121,26 @@ body {
 }
 
 .marker {
-    float: left;
 }
 
 .marker svg {
-    float: left;
+}
+
+.marker p.instructions {
+    margin-top: 2cm;
+    font-size: 0.4cm;
+}
+
+.marker p.markerlabel {
+    margin: 0;
+    margin-top: -2cm;
+    font-size: 6cm;
+}
+
+.marker p.details {
+    margin: 0;
+    margin-top: -1cm;
+    font-size: 1cm;
 }
 
 @media only screen and (max-width: 720px) {
@@ -319,6 +334,7 @@ body {
 
     @page {
         margin: 0.5cm;
+        margin-top: 2cm;
     }
 
     p,

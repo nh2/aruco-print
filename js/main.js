@@ -12,7 +12,7 @@
     var $marker_width = $('#marker-width');
     var $marker_spacing = $('#marker-spacing');
 
-    var width = '2cm';
+    var width = '16cm';
     var spacing = '0.2cm';
 
     var MAX_CODES = 1024;
@@ -49,6 +49,9 @@
                 .css('padding-bottom', spacing)
                 .css('padding-left', spacing);
             $marker.html(marker.toSVG());
+            $marker.append($('<p class="instructions">Leave at least 2cm of white margin around the black marker, unobstructed.</p>'));
+            $marker.append($('<p class="markerlabel">'+id+'</p>'));
+            $marker.append($('<p class="details">A4 16cm</p>'));
             $markers.append($marker);
         });
     };
